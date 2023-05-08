@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path')
 const morgan = require('morgan')
 
-// const equipData = require('models/equipment')
 const app = express();
 
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms'))

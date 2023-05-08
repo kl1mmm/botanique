@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>botanique - Аналитика</title>
+    <link type="text/css" rel="stylesheet" href="../styles/normalize.css"/>
+    <link rel="stylesheet" href="../styles/style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+            integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+    <script src="../scripts/custom.js"></script>
+</head>
+<body>
+<div class="nav">
+    <header class="navbar">
+        <a href="/"><img class="logo" alt="botanique" src="../images/logo.svg"></a>
+        <div class="pagesSelector">
+            <a class="navLink" href="/">Главная</a>
+            <div class="selected">
+                <a class="navLink" href="/analytics">Аналитика
+                </a>
+                <div class="line"></div>
+            </div>
+        </div>
+        <a href="/error"><img class="userAvatar" alt="Профиль" src="../images/avatar.svg"></a>
+    </header>
+</div>
+
+<div class="container" id="content">
+    <div class="table_head">
+        <div class="row">
+            <div class="maindata">
+                <img src="../images/equip/pH.svg">
+                <div class="column">
+                    <div class="nameOfEquip">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</div>
+                    <div class="numb_series">
+                        <div class="numb">S1.4.I14-9.001</div>
+                        &nbsp;•&nbsp;
+                        <div class="series">00-024004</div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <select class="status" name="dropdown">
+                    <option value="inwork" selected>В работе</option>
+                </select>
+                <div class="favorite">
+                    <a href="/error">
+                        <img class="img" src="../images/favorite.svg">
+                    </a>
+                </div>
+                <div class="settings">
+                    <a href="/error">
+                        <img class="img" src="../images/settings.svg" alt="Настройки">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+    </div>
+    <div class="table_action">
+        <select class="list_item" name="dropdown">
+            <option class="option" value="operation" selected>Работа прибора</option>
+        </select>
+        <div class="buttons">
+            <button class="alarmBtn"><img class="alarm" alt="⏰" src="../images/alarm.svg"></button>
+            <div class="saveBtn">
+                <button class="action" id="btn-print" onclick="formatPDF()">Сохранить PDF</button>
+                <button class="changeAction"><img class="dots" alt="⋮" src="../images/Dots.svg"></button>
+            </div>
+        </div>
+    </div>
+    <div class="date_changer">
+        <input type="datetime-local" class="startDate">
+        <span>→</span>
+        <input type="datetime-local" class="finishDate">
+    </div>
+    <div class="radio_buttons">
+        <div>
+            <input type="radio" name="option" id="radio1"/>
+            <label for="radio1">День</label>
+        </div>
+        <div>
+            <input type="radio" name="option" id="radio2"/>
+            <label for="radio2">Неделя</label>
+        </div>
+        <div>
+            <input type="radio" name="option" id="radio3"/>
+            <label for="radio3">2 недели</label>
+        </div>
+        <div>
+            <input type="radio" name="option" id="radio4"/>
+            <label for="radio4">Месяц</label>
+        </div>
+        <div>
+            <input type="radio" name="option" id="radio5"/>
+            <label for="radio5">3 месяца</label>
+        </div>
+        <div>
+            <input type="radio" name="option" id="radio6"/>
+            <label for="radio6">Полгода</label>
+        </div>
+    </div>
+    <table class="an_spread">
+        <tr class="header">
+            <td>Начало</td>
+            <td>Тип работ</td>
+            <td>Работы</td>
+            <td>Результат</td>
+            <td>Пользователь</td>
+        </tr>
+        <tr class="table_row">
+            <td class="date">09.10.2021, 15:46</td>
+            <td class="type">
+                <div class="workstatus inwork">В работе</div>
+                <div class="worktype">Измерение</div>
+            </td>
+            <td class="jobs"><b>Образец/серия:</b> 000100057935_170000010325_0000251849</td>
+            <td class="result"><img class="statusImg" src="../images/check.svg"></td>
+            <td class="user"><a href="/error">morozovava</a></td>
+        </tr>
+        <tr class="table_row">
+            <td class="date">12.10.2021, 12:17</td>
+            <td class="type">
+                <div class="workstatus inwork">В работе</div>
+                <div class="worktype">Калибровка</div>
+            </td>
+            <td class="jobs"><b>Образец/серия:</b> 000100057935_170000010325_0000251849<br>
+                <b>Образец:</b> Образец 2<br>
+                <b>Образец:</b> образец 1<br>
+                <b>Метод:</b> метов тестовый<br>
+                <b>Номер колонки:</b> Колонка 1
+            </td>
+            <td class="result">
+                Промывка с указанием вещества: Вещество
+                Комментарий: тест успешности
+                <img class="statusImg" src="../images/check.svg"></td>
+            <td class="user"><a href="/error">morozovava</a></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

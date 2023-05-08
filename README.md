@@ -14,4 +14,5 @@ Now you are in the repository in which I placed a test task from the company "Bi
 This task implements a very small web-project based on HTML, CSS, native JavaScript and Node.JS using EJS. This way, this project shows my experience of quickly editing and implementing small web pages with templates and connecting a web server.
 
 Everyone have a good mood and a good day! Throw "Stars" and subscribe to the update of this repository - this project, I have plans, still bring to mind :)
+
 ![изображение](https://user-images.githubusercontent.com/89641101/236831642-ea468055-06c0-48e7-928d-18a99528dd62.png)

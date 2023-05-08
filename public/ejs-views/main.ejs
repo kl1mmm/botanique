@@ -25,7 +25,9 @@
 </div>
 <div class="search">
     <input class="searchBar" type="text"
-           placeholder="Поиск прибора в Botanique по номеру, названию, подразделению и др." id="searchInput">
+           placeholder="Поиск прибора в Botanique по номеру, названию, подразделению и др."
+           value=""
+           id="searchInput">
     <a href="/error"><img class="qrScan" src="../images/qr_code.svg"></a>
 </div>
 <div class="table">
@@ -42,7 +44,7 @@
                 <tr class="trow">
                     <td><a class="nameEquip" href="/analytics/<%= id %>"><img src='<%= img %>'></a></td>
                     <td>
-                        <a class="nameEquip" href="/analytics/<%= id %>"><%= name %></a>
+                        <a class="nameEquip" href="/analytics/<%= id %>" id="nameOfEquip"><%= name %></a>
                     </td>
                     <td><select class="drop" name="dropdown">
                             <option value="free" selected><%= status %></option>

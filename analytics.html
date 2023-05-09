@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>botanique - Аналитика</title>
-    <link type="text/css" rel="stylesheet" href="styles/normalize.css"/>
-    <link rel="stylesheet" href="styles/style.css"/>
+    <link type="text/css" rel="stylesheet" href="public/styles/normalize.css"/>
+    <link rel="stylesheet" href="public/styles/style.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
             integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"></script>
-    <script src="scripts/custom.js"></script>
+    <script src="public/scripts/custom.js"></script>
 </head>
 <body>
 <div class="nav">
     <header class="navbar">
-        <a href="index.html"><img class="logo" alt="botanique" src="images/logo.svg"></a>
+        <a href="index.html"><img class="logo" alt="botanique" src="public/images/logo.svg"></a>
         <div class="pagesSelector">
             <a class="navLink" href="index.html">Главная</a>
             <div class="selected">
@@ -24,7 +24,7 @@
                 <div class="line"></div>
             </div>
         </div>
-        <a href="error.html"><img class="userAvatar" alt="Профиль" src="images/avatar.svg"></a>
+        <a href="error.html"><img class="userAvatar" alt="Профиль" src="public/images/avatar.svg"></a>
     </header>
 </div>
 
@@ -32,7 +32,7 @@
     <div class="table_head">
         <div class="row">
             <div class="maindata">
-                <img src="images/equip/pH.svg">
+                <img src="public/images/equip/pH.svg">
                 <div class="column">
                     <div class="nameOfEquip">pH-метр Mettler-Toledo International, Inc. SevenCompact S220</div>
                     <div class="numb_series">
@@ -48,12 +48,12 @@
                 </select>
                 <div class="favorite">
                     <a href="error.html">
-                        <img class="img" src="images/favorite.svg">
+                        <img class="img" src="public/images/favorite.svg">
                     </a>
                 </div>
                 <div class="settings">
                     <a href="error.html">
-                        <img class="img" src="images/settings.svg" alt="Настройки">
+                        <img class="img" src="public/images/settings.svg" alt="Настройки">
                     </a>
                 </div>
             </div>
@@ -65,10 +65,10 @@
             <option class="option" value="operation" selected>Работа прибора</option>
         </select>
         <div class="buttons">
-            <button class="alarmBtn"><img class="alarm" alt="⏰" src="images/alarm.svg"></button>
+            <button class="alarmBtn"><img class="alarm" alt="⏰" src="public/images/alarm.svg"></button>
             <div class="saveBtn">
                 <button class="action" id="btn-print" onclick="formatPDF()">Сохранить PDF</button>
-                <button class="changeAction"><img class="dots" alt="⋮" src="images/Dots.svg"></button>
+                <button class="changeAction"><img class="dots" alt="⋮" src="public/images/Dots.svg"></button>
             </div>
         </div>
     </div>
@@ -118,7 +118,7 @@
                 <div class="worktype">Измерение</div>
             </td>
             <td class="jobs"><b>Образец/серия:</b> 000100057935_170000010325_0000251849</td>
-            <td class="result"><img class="statusImg" src="images/check.svg"></td>
+            <td class="result"><img class="statusImg" src="public/images/check.svg"></td>
             <td class="user"><a href="error.html">morozovava</a></td>
         </tr>
         <tr class="table_row">
@@ -136,7 +136,7 @@
             <td class="result">
                 Промывка с указанием вещества: Вещество
                 Комментарий: тест успешности
-                <img class="statusImg" src="images/check.svg"></td>
+                <img class="statusImg" src="public/images/check.svg"></td>
             <td class="user"><a href="error.html">morozovava</a></td>
         </tr>
     </table>

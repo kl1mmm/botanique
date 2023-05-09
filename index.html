@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>botanique</title>
-    <link type="text/css" rel="stylesheet" href="styles/normalize.css"/>
-    <link rel="stylesheet" href="styles/style.css"/>
-    <script src="scripts/custom.js"></script>
+    <link type="text/css" rel="stylesheet" href="public/styles/normalize.css"/>
+    <link rel="stylesheet" href="public/styles/style.css"/>
+    <script src="public/scripts/custom.js"></script>
 </head>
 <body>
 <div class="nav">
     <header class="navbar">
-        <a href="index.html"><img class="logo" alt="botanique" src="images/logo.svg"></a>
+        <a href="index.html"><img class="logo" alt="botanique" src="public/images/logo.svg"></a>
         <div class="pagesSelector">
             <div class="selected">
                 <a class="navLink" href="index.html">Главная
@@ -20,16 +20,16 @@
 
             <a class="navLink" href="analytics.html">Аналитика</a>
         </div>
-        <a href="error.html"><img class="userAvatar" alt="Профиль" src="images/avatar.svg"></a>
+        <a href="error.html"><img class="userAvatar" alt="Профиль" src="public/images/avatar.svg"></a>
     </header>
 </div>
 <div class="search">
     <input class="searchBar" type="text"
            placeholder="Поиск прибора в Botanique по номеру, названию, подразделению и др." id="searchInput">
-    <a href="error.html"><img class="qrScan" src="images/qr_code.svg"></a>
+    <a href="error.html"><img class="qrScan" src="public/images/qr_code.svg"></a>
 </div>
 <div class="table">
-    <div class="TableNaming"><img class="tableNamingImg" alt="❤" src="images/heart.svg">&nbsp;Любимые приборы</div>
+    <div class="TableNaming"><img class="tableNamingImg" alt="❤" src="public/images/heart.svg">&nbsp;Любимые приборы</div>
     <table class="spreadsheet">
         <tr class="header">
             <th></th>
@@ -38,44 +38,44 @@
             <th></th>
         </tr>
         <tr class="trow">
-            <td><a class="nameEquip" href="analytics.html"><img src="images/equip/pH.svg"></a></td>
+            <td><a class="nameEquip" href="analytics.html"><img src="public/images/equip/pH.svg"></a></td>
             <td><a class="nameEquip" href="analytics.html">pH-метр Mettler-Toledo International, Inc. SevenCompact
                 S220</a></td>
             <td><select class="drop" name="dropdown">
                 <option value="free" selected>Свободен</option>
             </select></td>
             <td><a onclick="changeNotifications(document.getElementById('notImg1'))"><img id="notImg1"
-                                                                                          src="images/notice.svg"></a>
+                                                                                          src="public/images/notice.svg"></a>
             </td>
         </tr>
         <tr class="trow">
-            <td><a class="nameEquip" href="analytics.html"><img src="images/equip/spectr.svg"></a></td>
+            <td><a class="nameEquip" href="analytics.html"><img src="public/images/equip/spectr.svg"></a></td>
             <td><a class="nameEquip" href="analytics.html">Спектрофотометр Varian, Inc Cary 50 Bio</a></td>
             <td><select class="drop" name="dropdown">
                 <option value="free" selected>Свободен</option>
             </select></td>
             <td><a onclick="changeNotifications(document.getElementById('notImg2'))"><img id="notImg2"
-                                                                                          src="images/notice.svg"></a>
+                                                                                          src="public/images/notice.svg"></a>
             </td>
         </tr>
         <tr class="trow">
-            <td><a class="nameEquip" href="analytics.html"><img src="images/equip/titrator.svg"></a></td>
+            <td><a class="nameEquip" href="analytics.html"><img src="public/images/equip/titrator.svg"></a></td>
             <td><a class="nameEquip" href="analytics.html">Титратор</a></td>
             <td><select class="drop" name="dropdown">
                 <option value="free" selected>Свободен</option>
             </select></td>
             <td><a onclick="changeNotifications(document.getElementById('notImg3'))"><img id="notImg3"
-                                                                                          src="images/notice.svg"></a>
+                                                                                          src="public/images/notice.svg"></a>
             </td>
         </tr>
         <tr class="trow">
-            <td><a class="nameEquip" href="analytics.html"><img src="images/equip/coag.svg"></a></td>
+            <td><a class="nameEquip" href="analytics.html"><img src="public/images/equip/coag.svg"></a></td>
             <td><a class="nameEquip" href="analytics.html">Коагулометр Tcoag, KC 4 Delta</a></td>
             <td><select class="drop" name="dropdown">
                 <option value="free" selected>Свободен</option>
             </select></td>
             <td><a onclick="changeNotifications(document.getElementById('notImg4'))"><img id="notImg4"
-                                                                                          src="images/notice.svg"></a>
+                                                                                          src="public/images/notice.svg"></a>
             </td>
         </tr>
     </table>

@@ -1,4 +1,4 @@
-#Добрый день.
+# Добрый день.
 
 Сейчас вы находитесь в репозиторие, в котором я разместил тестовое задание от компании "Biocad", на должность "Стажер в Группу интеграции аппаратных платформ" или же "Стажёр Frontend-разработчик".
 
@@ -9,7 +9,7 @@
 Всем хорошего настроения и удачного дня! Кидайте "Звёздочки" и подписывайтесь на обновления данного репозитория - данный проект, у меня в планах, ещё довести до ума :)
 
 ----------
-#Good afternoon.
+# Good afternoon.
 
 Now you are in the repository in which I placed a test task from the company "Biocad", for the position of "Trainee in the Group of integration of hardware platforms" or "Trainee Frontend-developer".
 
